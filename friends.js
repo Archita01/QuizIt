@@ -12,36 +12,36 @@ let availableQuestions = [];
 
 let questions= [
     {
-        question: 'What is 2+2? ',
-        choice1: 2,
-        choice2: 4,
-        choice3: 6,
-        choice4: 8,
+        question: 'What is name of Ross"s pet ? ',
+        choice1: 'Albert',
+        choice2: 'Marcel',
+        choice3: 'Emma',
+        choice4: 'Tommy',
         answer: 2,
     },
     {
-        question: 'Hi ',
-        choice1: 2,
-        choice2: 4,
-        choice3: 6,
-        choice4: 8,
-        answer: 2,
+        question: 'What is the name of Joeys penguin? ',
+        choice1: 'Hugsy',
+        choice2: 'Huggy',
+        choice3: 'Snowy',
+        choice4: 'Piggy',
+        answer: 1,
     },
     {
-        question: 'Hello ',
-        choice1: 2,
-        choice2: 4,
-        choice3: 9,
-        choice4: 8,
-        answer: 2,
+        question: 'What is the name of Phoebes favourite song? ',
+        choice1: 'Smelly Dog',
+        choice2: 'Smelly Bat',
+        choice3: 'Sticky Shoe',
+        choice4: 'Smelly Cat',
+        answer: 4,
     },
     {
-        question: 'Heo ',
-        choice1: 2,
-        choice2: 7,
-        choice3: 6,
-        choice4: 8,
-        answer: 2,
+        question: 'Joey never shares....? ',
+        choice1: 'His food',
+        choice2: 'His books',
+        choice3: 'His bed',
+        choice4: 'His hugsy',
+        answer: 1,
     }
 ];
 
@@ -58,7 +58,7 @@ startGame = () => {
 getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter>max)
     {
-        localStorage.setItem('most recent score',score)
+        localStorage.setItem('mostRecentScore',score)
         return window.location.assign('/end.html')
     }
     questionCounter++;
