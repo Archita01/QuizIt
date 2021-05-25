@@ -1,0 +1,61 @@
+body{
+    color: seashell;
+}
+.choice-container{
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 5px;
+    background: slateblue;
+    font-size: 3rem;
+    min-width: 80rem;
+}
+.choice-container:hover{
+    cursor: pointer;
+    box-shadow: 0 0.3rem 1.3rem 0 rebeccapurple;
+    transition: transform 100ms;
+    transform: scale(1.02);
+}
+.choice-prefix{
+    padding: 2rem 2.5rem;
+    color: white;
+}
+.choice-text{
+    padding: 2rem;
+    width: 100%;
+}
+.correct{
+    background: rgb(6, 235, 6);
+}
+.incorrect{
+    background: rgb(248, 11, 11);
+}
+#friend{
+    display: flex;
+    justify-content: space-between;
+}
+.friend-prefix{
+    text-align: center;
+    font-size: 2rem;
+}
+.friend-main-text{
+    text-align: center;
+} 
+#progressBar{
+    width: 20rem;
+    height: 3rem;
+    border :0.2rem solid rgb(6, 235, 6);
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+#progressBarFull{
+    height: 100%;
+    width: 0%;
+    background: rgb(6, 235, 6);
+}
+@media screen and (max-width: 768px){
+    .choice-container{
+        min-width: 40rem;
+    }
+}
